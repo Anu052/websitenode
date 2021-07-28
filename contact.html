@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css"
+        integrity="sha384-wESLQ85D6gbsF459vf1CiZ2+rr+CsxRY0RpiF1tLlQpDnAgg6rwdsUF1+Ics2bni" crossorigin="anonymous">
+    <style>
+        .img {
+            display: flex;
+        }
+
+        .img img {
+            display: block;
+            width: 50px;
+            height: 50px;
+            margin: 10px;
+        }
+
+        .container {
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .img img:hover {
+            animation: hover 1s linear;
+            cursor: pointer;
+            transition: cubic-bezier(0.165, 0.84, 0.44, 1);
+        }
+
+        @keyframes hover {
+            form {
+                transform: scale(1);
+            }
+
+            to {
+                transform: scale(1.1);
+            }
+        }
+        @media (max-width:500px) {
+            h1{
+                font-size: 1rem;
+            }
+            .img{
+                display: flex;
+                flex-direction: column;
+            }
+            h3{
+                font-size: 0.7rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Thanks for visiting my website</h1>
+        <h3>If you have any queries and doubts you can contact me</h3>
+        <div class="img">
+            <a href="https://www.facebook.com/profile.php?id=100026494248211">
+                <img src="https://image.flaticon.com/icons/png/512/179/179319.png" alt="fb">
+            </a>
+            <a href="https://www.instagram.com/anuragtiwari052/">
+                <img src="https://image.flaticon.com/icons/png/128/185/185985.png" alt="insta">
+            </a>
+            <a href="https://twitter.com/AnuragT74735706?s=09">
+                <img src="https://image.flaticon.com/icons/png/512/145/145812.png" alt="twitter">
+            </a>
+            <a href="https://wa.me/7828884192">
+                <img src="https://image.flaticon.com/icons/png/512/733/733585.png" alt="whatsapp">
+            </a>
+            <a href="https://www.linkedin.com/in/anurag-tiwari-523473193/">
+                <img src="https://image.flaticon.com/icons/png/512/145/145807.png" alt="linkdlen">
+            </a>
+        </div>
+    </div>
+</body>
+
+</html>
